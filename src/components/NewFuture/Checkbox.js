@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Checkbox = ({ className }) => {
-	let [view, setView] = useState("❌");
+	const [view, setView] = useState("❌");
 	const onButtonClick = () => {
 		setView(view === "✅" ? "❌" : "✅");
 	};
