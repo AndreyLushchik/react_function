@@ -16,7 +16,9 @@ const Counter = ({ className }) => {
 	};
 	return (
 		<div className={className}>
-			<button onClick={onCounterMinus}>➖</button>
+			<button onClick={onCounterMinus} disabled={!counter}>
+				➖
+			</button>
 			<span>{counter}</span>
 			<button onClick={onCounterPlus}>➕</button>
 			<button onClick={onCounterRundom}>🎲</button>
